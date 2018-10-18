@@ -33,7 +33,4 @@ dependencies {
 
     // apache
     implementation group: 'commons-io', name: 'commons-io', version: '2.0.1'
-
-    // viewpager indicator
-    api 'com.viewpagerindicator:library:2.4.1@aar'
 }
