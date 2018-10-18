@@ -35,5 +35,5 @@ dependencies {
     implementation group: 'commons-io', name: 'commons-io', version: '2.0.1'
 
     // viewpager indicator
-    implementation 'com.viewpagerindicator:library:2.4.1@aar'
+    api 'com.viewpagerindicator:library:2.4.1@aar'
 }
