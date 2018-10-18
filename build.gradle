@@ -3,6 +3,7 @@
 buildscript {
     ext.kotlin_version = '1.2.71'
     repositories {
+        maven { url "http://dl.bintray.com/populov/maven" }
         mavenCentral()
         google()
         jcenter()
