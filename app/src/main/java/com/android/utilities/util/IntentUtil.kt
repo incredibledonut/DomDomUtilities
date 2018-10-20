@@ -7,12 +7,13 @@ import android.net.Uri
 
 class IntentUtil {
 
-    fun redirectToWebPage(activity: Activity, path: String) {
-        val viewIntent = Intent(
-            Intent.ACTION_VIEW,
-            Uri.parse(path)
-        )
-        activity.startActivity(viewIntent)
+    companion object {
+        fun redirectToWebPage(activity: Activity, path: String) {
+            val viewIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse(path)
+            )
+            activity.startActivity(viewIntent)
+        }
     }
-
 }
