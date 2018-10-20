@@ -1,4 +1,4 @@
-package com.android.utilities.layout.edittext;
+package com.android.utilities.layout.textview;
 
 import android.content.Context;
 import android.graphics.Typeface;
