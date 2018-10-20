@@ -26,6 +26,6 @@ public class MontserratRegularEditText extends AppCompatEditText {
     }
 
     private void setupTypeface(Context context) {
-        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/MontSerrat-Regular.ttf"));
+        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/Montserrat-Regular.ttf"));
     }
 }

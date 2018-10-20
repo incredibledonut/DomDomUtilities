@@ -26,6 +26,6 @@ public class MontserratLightEditText extends AppCompatEditText {
     }
 
     private void setupTypeface(Context context) {
-        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/MontSerrat-Light.ttf"));
+        setTypeface(Typeface.createFromAsset(context.getAssets(), "fonts/Montserrat-Light.ttf"));
     }
 }
