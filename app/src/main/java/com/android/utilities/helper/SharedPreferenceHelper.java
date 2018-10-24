@@ -23,35 +23,35 @@ public class SharedPreferenceHelper {
     }
 
     // sharedPreference setter
-    static void setSharedPreferenceString(Context context, String key, String value) {
+    public static void setSharedPreferenceString(Context context, String key, String value) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putString(key, value);
         editor.commit();
     }
 
-    static void setSharedPreferenceInt(Context context, String key, int value) {
+    public static void setSharedPreferenceInt(Context context, String key, int value) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putInt(key, value);
         editor.commit();
     }
 
-    static void setSharedPreferenceBoolean(Context context, String key, boolean value) {
+    public static void setSharedPreferenceBoolean(Context context, String key, boolean value) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putBoolean(key, value);
         editor.commit();
     }
 
-    static void setSharedPreferenceLong(Context context, String key, long value) {
+    public static void setSharedPreferenceLong(Context context, String key, long value) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         editor.putLong(key, value);
         editor.commit();
     }
 
-    static void setSharedPreferenceList(Context context, String key, List<String> stringList) {
+    public static void setSharedPreferenceList(Context context, String key, List<String> stringList) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = settings.edit();
         String[] myStringList = stringList.toArray(new String[stringList.size()]);
@@ -59,35 +59,35 @@ public class SharedPreferenceHelper {
     }
 
     // sharedPreference getter
-    static String getSharedPreferenceString(Context context, String key, String defValue) {
+    public static String getSharedPreferenceString(Context context, String key, String defValue) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         String value = settings.getString(key, defValue);
 
         return value;
     }
 
-    static int getSharedPreferenceInt(Context context, String key, int defValue) {
+    public  static int getSharedPreferenceInt(Context context, String key, int defValue) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         int value = settings.getInt(key, defValue);
 
         return value;
     }
 
-    static boolean getSharedPreferenceBoolean(Context context, String key, boolean defValue) {
+    public  static boolean getSharedPreferenceBoolean(Context context, String key, boolean defValue) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         boolean value = settings.getBoolean(key, defValue);
 
         return value;
     }
 
-    static long getSharedPreferenceLong(Context context, String key, long defValue) {
+    public static long getSharedPreferenceLong(Context context, String key, long defValue) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         long value = settings.getLong(key, defValue);
 
         return value;
     }
 
-    static List<String> getSharedPreferenceList(Context context, String key) {
+    public  static List<String> getSharedPreferenceList(Context context, String key) {
         SharedPreferences settings = context.getSharedPreferences(PREF_FILE, Context.MODE_PRIVATE);
         return new ArrayList<String>(Arrays.asList(TextUtils.split(settings.getString(key, ""),
                 "‚‗‚")));
