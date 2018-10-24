@@ -4,6 +4,7 @@ public class GeneralConfig {
 
     public static boolean enableDebugLog = true;
     public static String LOG_TAG = "";
+    public static String LOG_PREFIX = "";
 
     public static String TestingAPI = "";
 }

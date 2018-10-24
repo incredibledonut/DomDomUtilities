@@ -11,7 +11,7 @@ public class LogUtil {
     //Log message color - Blue
     public static void d(String log) {
         if (GeneralConfig.enableDebugLog) {
-            Log.d(GeneralConfig.LOG_TAG, log);
+            Log.d(GeneralConfig.LOG_TAG, GeneralConfig.LOG_PREFIX + log);
         }
     }
 
